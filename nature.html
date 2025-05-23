@@ -36,16 +36,12 @@
 
         <h6 class="mt-3">Filter by Type</h6>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="type" value="nature" id="nature">
-            <label class="form-check-label" for="nature">Nature</label>
+            <input class="form-check-input" type="checkbox" name="type" value="animals" id="animals">
+            <label class="form-check-label" for="animals">Animals</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="type" value="people" id="people">
-            <label class="form-check-label" for="people">People</label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="type" value="architecture" id="architecture">
-            <label class="form-check-label" for="architecture">Architecture</label>
+            <input class="form-check-input" type="checkbox" name="type" value="coast" id="coast">
+            <label class="form-check-label" for="coast">Coast</label>
         </div>
         <hr>
         <button type="button" class="btn btn-success btn-sm mb-2 w-100" onclick="applyFilters()">Apply Filters</button>
@@ -59,7 +55,7 @@
 
 <div class="content">
     <div id="gallery" class="row g-3">
-        <div class="col-12 col-sm-6 col-md-4" data-date="15-11-2025" data-type="architecture">
+        <div class="col-12 col-sm-6 col-md-4" data-date="15-11-2025" data-type="animals">
             <div class="gallery-item">
                 <img src="img/jesterka.jpg" class="gallery-img" alt="jesterka">
                 <div class="gallery-caption d-flex justify-content-between">
@@ -68,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4" data-date="01-12-2024" data-type="people">
+        <div class="col-12 col-sm-6 col-md-4" data-date="01-12-2024" data-type="animals">
             <div class="gallery-item">
                 <img src="img/beruska.JPG" class="gallery-img" alt="beruska">
                 <div class="gallery-caption d-flex justify-content-between">
@@ -77,12 +73,21 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4" data-date="02-12-2024" data-type="architecture">
+        <div class="col-12 col-sm-6 col-md-4" data-date="02-12-2024" data-type="animals">
             <div class="gallery-item">
                 <img src="img/bee.jpg" class="gallery-img" alt="vcela">
                 <div class="gallery-caption d-flex justify-content-between">
                     <span style="font-weight: bold;">Bee</span>
                     <span style="font-size: 0.9rem;">Zlín, 15.11.2025</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" data-date="15-07-2024" data-type="coast">
+            <div class="gallery-item">
+                <img src="img/plazaDuba.jpg" class="gallery-img" alt="plazaDuba">
+                <div class="gallery-caption d-flex justify-content-between">
+                    <span style="font-weight: bold;">plaža Duba</span>
+                    <span style="font-size: 0.9rem;">Živogošće, 15.7.2024</span>
                 </div>
             </div>
         </div>
