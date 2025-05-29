@@ -3,6 +3,7 @@
 ### TODO
 
 - [ ] Form where people can add suggestions
+- [ ] Fix the footer on index.html (should be fixed by the form)
 
 ### In Progress
 
