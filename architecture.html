@@ -50,7 +50,7 @@
 </div>
 
 <button id="toggleSidebar" class="toggle-btn">
-    &rarr;
+    <i class="bi bi-funnel"></i>
 </button>
 
 <div class="content">
@@ -284,7 +284,7 @@
     toggleBtn.addEventListener('click', () => {
         sidebar.classList.toggle('open');
         toggleBtn.classList.toggle('open');
-        toggleBtn.innerHTML = sidebar.classList.contains('open') ? '&larr;' : '&rarr;';
+        toggleBtn.innerHTML = sidebar.classList.contains('open') ? '<i class="bi bi-funnel"></i>' : '<i class="bi bi-funnel"></i>';
     });
 
     window.addEventListener('resize', () => iso && iso.layout());
