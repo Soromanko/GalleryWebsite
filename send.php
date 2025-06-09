@@ -15,7 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "Reply-To: $email" . "\r\n";
 
     if (mail($to, $subject, $message, $headers)) {
-        echo "Thank you! Your suggestion has been sent.";
+        echo "Thank you! Your suggestion has been sent. You will be moved back in 5 seconds.";
+        sleep(5);
+        header("Location: index.html");
     } else {
         echo "Sorry, something went wrong. Please try again later.";
     }

@@ -2,15 +2,17 @@
 
 ### TODO
 
-- [ ] Form where people can add suggestions
-- [ ] Fix the footer on index.html (should be fixed by the form)
+- [ ] For now, there is nothing
 
 ### In Progress
 
-- [ ] Filters
-  - [ ] Filled when filters active
+- [ ] Form where people can add suggestions (use phpmailer)
 
 ### Done ✓
 
 - [x] Filters added
 - [x] TODO created
+- [x] Fix the footer on index.html
+- [x] Filters
+  - [x] Filters added
+  - [x] Filled when filters active
