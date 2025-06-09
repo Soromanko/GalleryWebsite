@@ -1,8 +1,8 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $suggestion = htmlspecialchars($_POST['suggestion']);
+    $name = htmlspecialchars($_POST['Name']);
+    $email = htmlspecialchars($_POST['Email']);
+    $suggestion = htmlspecialchars($_POST['Suggestion']);
 
     $to = "samuel.soroman@email.cz";
 
