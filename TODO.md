@@ -2,7 +2,7 @@
 
 ### TODO
 
-- [ ] For now, there is nothing
+- [ ] Change the filter button that open sidebar menu with filters
 
 ### In Progress
 
