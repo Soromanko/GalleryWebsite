@@ -50,7 +50,7 @@
 </div>
 
 <button id="toggleSidebar" class="toggle-btn">
-    &rarr;
+    <i class="bi bi-funnel"></i>
 </button>
 
 <div class="content">
@@ -156,12 +156,12 @@
     }
 
     function applyFilters() {
-        const checkboxes = document.querySelectorAll('input[name="type"]:checked');
+        const checkboxes = document.querySelectorAll('input[name="place"]:checked');
         if (checkboxes.length === 0) {
             iso.arrange({ filter: '*' });
         } else {
             const filters = Array.from(checkboxes)
-                .map(cb => `[data-type="${cb.value}"]`)
+                .map(cb => `[data-place="${cb.value}"]`)
                 .join(', ');
             iso.arrange({ filter: filters });
         }
@@ -170,13 +170,13 @@
             sidebar.classList.remove('open');
             setTimeout(() => {
                 toggleBtn.classList.remove('open');
-                toggleBtn.innerHTML = '&rarr;';
+                toggleBtn.innerHTML = '    <i class="bi bi-funnel"></i>';
             }, 300);
         }
     }
 
     function clearFilters() {
-        document.querySelectorAll('input[name="type"]').forEach(cb => cb.checked = false);
+        document.querySelectorAll('input[name="place"]').forEach(cb => cb.checked = false);
 
         iso.arrange({ filter: '*' });
 
@@ -194,7 +194,7 @@
     toggleBtn.addEventListener('click', () => {
         sidebar.classList.toggle('open');
         toggleBtn.classList.toggle('open');
-        toggleBtn.innerHTML = sidebar.classList.contains('open') ? '&larr;' : '&rarr;';
+        toggleBtn.innerHTML = sidebar.classList.contains('open') ? '<i class="bi bi-funnel"></i>' : '<i class="bi bi-funnel"></i>';
     });
 
     window.addEventListener('resize', () => iso && iso.layout());
@@ -206,7 +206,7 @@
 
         setTimeout(() => {
             toggleBtn.classList.remove('open');
-            toggleBtn.innerHTML = '&rarr;';
+            toggleBtn.innerHTML = '    <i class="bi bi-funnel"></i>';
         }, 300);
     });
 
