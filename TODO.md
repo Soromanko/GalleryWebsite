@@ -2,11 +2,12 @@
 
 ### TODO
 
-- [ ] Change the filter button that open sidebar menu with filters
+- [ ] Finish new website
 
 ### In Progress
 
-- [ ] Form where people can add suggestions (use phpmailer)
+- [ ] Bootstrap -> Tailwind
+- [ ] Change whole website design
 
 ### Done ✓
 
@@ -16,3 +17,4 @@
 - [x] Filters
   - [x] Filters added
   - [x] Filled when filters active
+  - [x] Change the filter button that open sidebar menu with filters
